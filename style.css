@@ -61,8 +61,14 @@ audio {
 
 /*keyframe loading-text*/
 @keyframes blinker {
-  50% {
+  0% {
     opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
   }
 }
 /*keyframe end*/
@@ -80,12 +86,20 @@ audio {
   color: red;
   cursor: pointer;
   border: 3px solid green;
-  margin-top: 200px;
+  margin-top: 160px;
+}
+
+a {
+  color: red;
 }
 
 .press-start:hover {
   text-decoration: underline;
-  border: dashed 3px green;
-  width: 500px;
+  border: solid 3px green;
+  color: red;
+  width: 400px;
+  height: 100px;
   text-align: center;
+  padding-top: 15px;
+  font-size: 50px;
 }
