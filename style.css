@@ -1,0 +1,91 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/*-------------------------------------*/
+
+@import url("https://fonts.googleapis.com/css2?family=Goldman&display=swap");
+
+body {
+  font-family: "Goldman";
+  background-color: black;
+}
+
+/*-------------------------------*/
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+}
+
+/*-------------------------------*/
+
+.loader {
+  border: 30px dotted grey;
+  border-radius: 50%;
+  border-top: dotted yellow 30px;
+  border-bottom: dotted red 30px;
+  border-left: dotted green 30px;
+  border-right: dotted blue 30px;
+  width: 250px;
+  height: 250px;
+  animation: spin 5s linear infinite;
+}
+
+/*keyframe loader*/
+@keyframes spin {
+  100% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/*keyframe end*/
+
+audio {
+  display: flex;
+  width: 100px;
+}
+
+/*-------------------------------*/
+
+.loading-text {
+  font-size: 50px;
+  color: white;
+  animation: blinker 1s linear infinite;
+}
+
+/*keyframe loading-text*/
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+/*keyframe end*/
+
+.loading-text-small {
+  font-size: 16px;
+  color: white;
+  border: 3px solid green;
+}
+
+/*-------------------------------*/
+
+.press-start {
+  font-size: 40px;
+  color: red;
+  cursor: pointer;
+  border: 3px solid green;
+  margin-top: 200px;
+}
+
+.press-start:hover {
+  text-decoration: underline;
+  border: dashed 3px green;
+  width: 500px;
+  text-align: center;
+}
