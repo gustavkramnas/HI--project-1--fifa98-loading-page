@@ -57,6 +57,7 @@ audio {
   font-size: 50px;
   color: white;
   animation: blinker 1s linear infinite;
+  margin-top: 3%;
 }
 
 /*keyframe loading-text*/
@@ -86,17 +87,18 @@ audio {
   color: red;
   cursor: pointer;
   border: 3px solid green;
-  margin-top: 160px;
+  margin-top: 80px;
 }
 
 a {
   color: red;
 }
 
+a:hover {
+  color: white;
+}
+
 .press-start:hover {
-  text-decoration: underline;
-  border: solid 3px green;
-  color: red;
   width: 400px;
   height: 100px;
   text-align: center;
